@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="search_history">
+        <item>蜜汁叉烧豆腐</item>
+        <item>五香茶叶蛋</item>
+        <item>椒盐小土豆</item>
+        <item>南瓜盐酥鸡</item>
+        <item>豆角土豆烩花肉</item>
+        <item>牛肉锅贴</item>
+        <item>蒜子烧大排</item>
+    </string-array>
+    <string-array name="my_menus">
+        <item>红烧肉炖豆腐</item>
+        <item>红烧肉炖豆腐1</item>
+        <item>红烧肉炖豆腐2</item>
+        <item>红烧肉炖豆腐3</item>
+        <item>红烧肉炖豆腐3</item>
+        <item>红烧肉炖豆腐4</item>
+        <item>红烧肉炖豆腐6</item>
+        <item>红烧肉炖豆腐4</item>
+        <item>红烧肉炖豆腐5</item>
+        <item>红烧肉炖豆腐7</item>
+        <item>红烧肉炖豆腐8</item>
+    </string-array>
+    <string-array name="tab2_list_view">
+        <item>火锅</item>
+        <item>小菜</item>
+        <item>牛肉</item>
+        <item>猪肉</item>
+        <item>羊肉</item>
+        <item>野味</item>
+        <item>饮料</item>
+        <item>小炒</item>
+        <item>小吃</item>
+        <item>特色</item>
+        <item>名贵</item>
+        <item>重口味</item>
+    </string-array>
+    <string-array name="tab4_list_view">
+        <item>第1名：图片，名字，简介，几星，</item>
+        <item>第2名：图片，名字，简介，几星，</item>
+        <item>第3名：图片，名字，简介，几星，</item>
+        <item>第4名：图片，名字，简介，几星，</item>
+        <item>第5名：图片，名字，简介，几星，</item>
+        <item>第6名：图片，名字，简介，几星，</item>
+        <item>第一名：图片，名字，简介，几星，</item>
+        <item>第一名：图片，名字，简介，几星，</item>
+        <item>第一名：图片，名字，简介，几星，</item>
+        <item>第一名：图片，名字，简介，几星，</item>
+        <item>第一名：图片，名字，简介，几星，</item>
+        <item>第一名：图片，名字，简介，几星，</item>
+        <item>第一名：图片，名字，简介，几星，</item>
+    </string-array>
+    <string-array name="department">
+        <item>IT</item>
+        <item>Commerce</item>
+        <item>HR</item>
+    </string-array>
+    <string-array name="department_value">
+        <item>001</item>
+        <item>002</item>
+        <item>003</item>
+    </string-array>
+    
+    <string-array name="show_more_list">
+        <item >分享</item>
+        <item >查看</item>
+        <item >订购</item>
+    </string-array>
+
+</resources>

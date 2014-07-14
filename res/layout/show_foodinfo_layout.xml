@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/show_foodinfo_middle"
+        android:layout_width="fill_parent"
+        android:layout_height="140dp" >
+
+        <ImageView
+            android:id="@+id/show_foodinfo_middle_image"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/show_foodinfo_middle_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/show_foodinfo_middle_image"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/show_foodinfo_middle_image"
+            android:singleLine="true"
+            android:text="红烧肉"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/show_foodinfo_middle_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/show_foodinfo_middle_title"
+            android:layout_below="@id/show_foodinfo_middle_title"
+            android:lines="2"
+            android:text="色泽红亮诱人，肥而不腻，入口酥软即化"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/show_foodinfo_middle_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/show_foodinfo_middle_describe"
+            android:layout_below="@id/show_foodinfo_middle_describe"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:text="价格："
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/show_foodinfo_middle_add"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:background="@drawable/app_button_select"
+            android:text="加入订单"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <!-- 这是分割线 -->
+
+    <ImageView
+        android:id="@+id/show_foodinfo_divide"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/show_foodinfo_middle"
+        android:background="#ff96AA39" />
+
+    <!-- bootom -->
+
+    <ScrollView
+        android:id="@+id/show_foodinfo_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/show_foodinfo_divide" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <!-- 1. 这是图片展示 -->
+
+            <!-- <ImageView
+                android:id="@+id/show_foodinfo_imageshow"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/food2" /> -->
+
+            <Gallery
+                android:id="@+id/show_foodinfo_gallery"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:spacing="10dp" />
+
+            <!-- 几星 和时间 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <RatingBar
+                    android:id="@+id/show_foodinfo_rating_bar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:max="10"
+                    android:numStars="5"
+                    android:progress="9"
+                    android:stepSize="0.5" />
+
+                <TextView
+                    android:id="@+id/show_foodinfo_foodtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="2013-5-24" />
+            </RelativeLayout>
+
+            <!-- 订购次数和价钱 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:id="@+id/show_foodinfo_order_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="订购次数：200+" />
+
+                <TextView
+                    android:id="@+id/show_foodinfo_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="价钱：20 RMB" />
+            </RelativeLayout>
+
+            <!-- divide -->
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray" />
+
+            <!-- 2. 这是详细介绍 -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="详细介绍"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/show_foodinfo_detailed_introduction"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="红烧肉是热菜菜谱之一，以五花肉为制作主料，红烧肉的烹饪技巧以砂锅为主，口味属于甜味。红烧肉是一道著名的本帮菜，充分体现了本帮菜“浓油赤酱”的特点 "
+                android:textSize="14sp" />
+
+            <!-- divide -->
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray" />
+
+            <!-- 3. 基本信息 -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="详细信息"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- 菜的特色 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="特点："
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/show_food_characteristic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="这是特点"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- 菜的来源 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="来源："
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/show_food_source"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="这是来源"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- 菜的原料 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="制作原料："
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/show_food_making"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="这是原料"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- 菜的花费时间 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="花费时间："
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/show_food_need_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="12分钟"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- divide -->
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

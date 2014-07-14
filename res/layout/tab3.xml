@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 用户订单 -->
+
+    <RelativeLayout
+        android:id="@+id/tab3_top"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp" >
+
+        <ImageView
+            android:id="@+id/tab3_top_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:clickable="true"
+            android:onClick="onTab3Click"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tab3_top_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tab3_top_head"
+            android:clickable="true"
+            android:onClick="onTab3Click"
+            android:text="张三"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tab3_top_total_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tab3_top_username"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/tab3_top_head"
+            android:text="共点10个菜 " />
+
+        <TextView
+            android:id="@+id/tab3_top_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tab3_top_total_number"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/tab3_top_head"
+            android:text="花费50元" />
+
+        <Button
+            android:id="@+id/tab3_top_submit"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_above="@+id/tab3_top_histore"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/app_button_select"
+            android:text="提交菜单"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/tab3_top_histore"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/app_button_select"
+            android:text="历史订单"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/tab3_top_delete"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tab3_top_histore"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/app_button_select"
+            android:text="删除全部"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <!-- 这是分割线 -->
+
+    <ImageView
+        android:id="@+id/divide"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/tab3_top"
+        android:background="#ff96AA39" />
+
+    <!-- bottom list view -->
+
+    <ListView
+        android:id="@+id/tab3_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+
+</LinearLayout>

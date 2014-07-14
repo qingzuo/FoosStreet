@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 定义菜单的内容 -->
+
+
+    <!--  -->
+    <!-- android:actionViewClass="android.widget.SearchView" -->
+    <item
+        android:id="@+id/menu_collect"
+        android:icon="@drawable/ic_heart_white"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/menu_collect"/>
+    <item
+        android:id="@+id/menu_share"
+        android:icon="@drawable/ic_menu_share"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/menu_share"/>
+
+    <!-- 以下不显示在操作拦 -->
+    <item
+        android:id="@+id/menu_user_login"
+        android:showAsAction="never"
+        android:title="@string/menu_user_login"/>
+    <item
+        android:id="@+id/menu_user_register"
+        android:showAsAction="never"
+        android:title="@string/menu_user_register"/>
+    <item
+        android:id="@+id/menu_soft_setting"
+        android:showAsAction="never"
+        android:title="@string/menu_soft_setting"/>
+    <item
+        android:id="@+id/menu_offer_suggest"
+        android:showAsAction="never"
+        android:title="@string/menu_offer_suggest"/>
+    <item
+        android:id="@+id/menu_about_us"
+        android:showAsAction="never"
+        android:title="@string/menu_about_us"/>
+
+</menu>

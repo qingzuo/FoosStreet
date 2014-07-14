@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp" >
+
+    <ImageView
+        android:id="@+id/about_us_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wlh" />
+
+    <TextView
+        android:id="@+id/about_us_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/about_us_image"
+        android:text="name"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/about_us_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/about_us_name"
+        android:layout_below="@id/about_us_name"
+        android:layout_marginTop="4dp"
+        android:text="post"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/about_us_motto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/about_us_post"
+        android:layout_below="@id/about_us_post"
+        android:layout_marginTop="4dp"
+        android:text="motto"
+        android:textSize="14dp" />
+
+</RelativeLayout>

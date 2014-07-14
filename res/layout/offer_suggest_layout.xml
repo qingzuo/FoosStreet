@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/offer_suggest_content" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_margin="5dp"
+        android:background="#ffC7CCD8" >
+
+        <EditText
+            android:id="@+id/offer_suggest_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/search_button"
+            android:background="@android:color/white"
+            android:hint="@string/offer_suggest_edit_hit" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/offer_suggest_send"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/app_button_select"
+        android:text="@string/offer_suggest_send_content"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

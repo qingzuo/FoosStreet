@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/app_button_select"
+        android:text="@string/register_button_content"
+        android:textColor="@android:color/white" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/register_button"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/register_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/register_title"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/register_username_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_title"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_username_content" />
+
+                <EditText
+                    android:id="@+id/register_username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="test"
+                    android:hint="@string/register_username_hint" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/register_pwd_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_username_ll"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_pwd_content" />
+
+                <EditText
+                    android:id="@+id/register_pwd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1234"
+                    android:hint="@string/register_pwd_hint"
+                    android:inputType="textPassword"
+                    android:password="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/register_pwd2_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_pwd_ll"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_pwd2_content" />
+
+                <EditText
+                    android:id="@+id/register_pwd2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1234"
+                    android:hint="@string/register_pwd2_hint"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/register_phone_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_pwd2_ll"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*电话号码：" />
+
+                <EditText
+                    android:id="@+id/register_phone"
+                    android:text="15274420593"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入电话号码"
+                    android:inputType="phone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/register_email_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_phone_ll"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用户邮箱：" />
+
+                <EditText
+                    android:id="@+id/register_email"
+                    android:layout_width="fill_parent"
+                    android:text="46275051@qq.com"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入邮箱账号"
+                    android:inputType="textEmailAddress" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/register_image_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_email_ll"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/register_image_select"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_register_getHead"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/register_image_title" >
+
+                <ImageView
+                    android:id="@+id/iv_register_head"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_toLeftOf="@+id/bt_register_takePhoto"
+                    android:scaleType="fitCenter"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_launcher" />
+
+                <Button
+                    android:id="@+id/bt_register_takePhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:onClick="onRegisterClick"
+                    android:text="拍照" />
+
+                <Button
+                    android:id="@+id/bt_register_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRegisterClick"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/bt_register_takePhoto"
+                    android:text="图库" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_register_getHead"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="说明："
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="1.带星号为必填 ；" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="2.头像来源于图库或者直接拍照； " />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="3.发布后需等待系统确认； " />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

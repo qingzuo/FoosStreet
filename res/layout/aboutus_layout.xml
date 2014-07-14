@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 1 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" >
+
+            <ImageView
+                android:id="@+id/about_us_image1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/we_yly" />
+
+            <TextView
+                android:id="@+id/about_us_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/about_us_image1"
+                android:text="杨利娅"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/about_us_post1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/about_us_name1"
+                android:layout_below="@id/about_us_name1"
+                android:layout_marginTop="4dp"
+                android:text="组长"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/about_us_motto1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/about_us_post1"
+                android:layout_below="@id/about_us_post1"
+                android:layout_marginTop="4dp"
+                android:text="工作：统筹全局，设计软件的功能与原型"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <!-- divid -->
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray" />
+
+        <!-- 2 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" >
+
+            <ImageView
+                android:id="@+id/about_us_image2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/we_zy" />
+
+            <TextView
+                android:id="@+id/about_us_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/about_us_image2"
+                android:text="钟源"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/about_us_post2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/about_us_name2"
+                android:layout_below="@id/about_us_name2"
+                android:layout_marginTop="4dp"
+                android:text="组员"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/about_us_motto2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/about_us_post2"
+                android:layout_below="@id/about_us_post2"
+                android:layout_marginTop="4dp"
+                android:text="工作：设计一把手，图片、配色都搞定"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <!-- divid -->
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray" />
+
+        <!-- 3 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" >
+
+            <ImageView
+                android:id="@+id/about_us_image3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/we_zq" />
+
+            <TextView
+                android:id="@+id/about_us_name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/about_us_image3"
+                android:text="左晴"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/about_us_post3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/about_us_name3"
+                android:layout_below="@id/about_us_name3"
+                android:layout_marginTop="4dp"
+                android:text="组员"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/about_us_motto3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/about_us_post3"
+                android:layout_below="@id/about_us_post3"
+                android:layout_marginTop="4dp"
+                android:text="工作：码农，不停的编码"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <!-- divid -->
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray" />
+
+        <!-- 4 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" >
+
+            <ImageView
+                android:id="@+id/about_us_image4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/we_xj" />
+
+            <TextView
+                android:id="@+id/about_us_name4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/about_us_image4"
+                android:text="肖娟"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/about_us_post4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/about_us_name4"
+                android:layout_below="@id/about_us_name4"
+                android:layout_marginTop="4dp"
+                android:text="组员"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/about_us_motto4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/about_us_post4"
+                android:layout_below="@id/about_us_post4"
+                android:layout_marginTop="4dp"
+                android:text="工作：码农2号，敲代码也就那么简单"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <!-- divid -->
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray" />
+
+        <!-- 5 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" >
+
+            <ImageView
+                android:id="@+id/about_us_image5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/we_zh" />
+
+            <TextView
+                android:id="@+id/about_us_name5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/about_us_image5"
+                android:text="张惠"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/about_us_post5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/about_us_name5"
+                android:layout_below="@id/about_us_name5"
+                android:layout_marginTop="4dp"
+                android:text="组员"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/about_us_motto5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/about_us_post5"
+                android:layout_below="@id/about_us_post5"
+                android:layout_marginTop="4dp"
+                android:text="工作：码农,测试看我的"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <!-- divid -->
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray" />
+
+        <!-- 6 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" >
+
+            <ImageView
+                android:id="@+id/about_us_image6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/we_lh" />
+
+            <TextView
+                android:id="@+id/about_us_name6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/about_us_image6"
+                android:text="凌涵"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/about_us_post6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/about_us_name6"
+                android:layout_below="@id/about_us_name6"
+                android:layout_marginTop="4dp"
+                android:text="组员"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/about_us_motto6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/about_us_post6"
+                android:layout_below="@id/about_us_post6"
+                android:layout_marginTop="4dp"
+                android:text="工作：敲敲代码，做做服务器"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_margin="5dp"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/tab4_list_item_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tab4_list_item_title"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_alignTop="@id/tab4_list_item_image"
+        android:layout_toRightOf="@id/tab4_list_item_image"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tab4_list_item_describe"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_alignLeft="@id/tab4_list_item_title"
+        android:layout_below="@id/tab4_list_item_title" />
+
+    <TextView
+        android:id="@+id/tab4_list_item_food_price"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_alignLeft="@id/tab4_list_item_describe"
+        android:layout_below="@id/tab4_list_item_describe"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tab4_list_item_order_number"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_alignLeft="@id/tab4_list_item_food_price"
+        android:layout_below="@id/tab4_list_item_food_price"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/tab4_list_item_add"
+        android:layout_width="80dp"
+        android:layout_height="39dp"
+		android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/white"
+        android:focusable="false"
+        android:text="加入订单"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/tab4_list_item_divide2"
+        android:layout_width="80dp"
+        android:layout_height="2dp"
+        android:layout_alignParentRight="true"
+		android:layout_below="@id/tab4_list_item_add"
+        android:background="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/tab4_list_item_more"
+        android:layout_width="80dp"
+        android:layout_height="39dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tab4_list_item_divide2"
+        android:background="@android:color/white"
+        android:focusable="false"
+        android:text="更多"
+        android:textSize="10sp" />
+
+</RelativeLayout>

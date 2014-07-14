@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/tab6_ifind_top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/tab6_ifind_top_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_button_select"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white"
+            android:layout_weight="2"
+            android:text="@string/tab6_ifind_delete" />
+
+        <Button
+            android:id="@+id/tab6_ifind_top_refresh"
+            android:layout_width="0dp"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_button_select"
+            android:textColor="@android:color/white"
+            android:layout_weight="2"
+            android:text="@string/tab6_ifind_rfresh" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/tab6_ifind_divid"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/tab6_ifind_top_rl"
+        android:background="@android:color/darker_gray" />
+
+    <ListView
+        android:id="@+id/tab6_ifind_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab6_ifind_divid"
+        android:entries="@array/my_menus" >
+    </ListView>
+
+</RelativeLayout>

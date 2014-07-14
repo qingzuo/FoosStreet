@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 头部 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#ffC7CCD8" >
+
+        <EditText
+            android:id="@+id/search_edit_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/search_button"
+            android:background="@android:color/white"
+            android:hint="@string/search_hint"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:text="@string/search_button" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/search_result_title"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:paddingLeft="5dp" />
+
+    <!-- 显示历史 -->
+
+    <ListView
+        android:id="@+id/search_result_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="2dp" >
+    </ListView>
+
+</LinearLayout>
